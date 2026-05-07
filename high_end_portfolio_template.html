@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="A portfolio homepage styled like a classic academic lab website." />
+  <style>
+    :root {
+      --maroon: #7a0c0c;
+      --maroon-dark: #5f0909;
+      --sidebar: #8a8a8a;
+      --line: #e6e6e6;
+      --text: #111;
+      --muted: #444;
+      --bg: #fff;
+      --navlink: #1a36d6;
+      --max: 1400px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    a { color: var(--navlink); }
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      background: linear-gradient(180deg, var(--maroon) 0%, var(--maroon-dark) 100%);
+      color: #fff;
+      padding: 22px 16px 24px;
+    }
+
+    .topbar-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .site-title {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .site-subtitle {
+      margin: 8px 0 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      line-height: 1.35;
+      font-weight: 700;
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .brand-mark img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .brand-mark .uni {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .layout {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr 360px;
+      gap: 0;
+      min-height: calc(100vh - 110px);
+    }
+
+    .left-nav {
+      border-right: 1px solid var(--line);
+      padding: 8px 0 24px;
+    }
+
+    .left-nav a {
+      display: block;
+      padding: 12px 10px 12px 6px;
+      border-bottom: 1px solid #f0f0f0;
+      text-decoration: none;
+      font-size: 1rem;
+      color: var(--navlink);
+    }
+
+    .left-nav a:first-child {
+      color: #111;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .left-nav a:hover {
+      background: #f7f7f7;
+      text-decoration: underline;
+    }
+
+    .main {
+      padding: 10px 28px 28px;
+    }
+
+    .main h2 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: clamp(1.7rem, 2.6vw, 3rem);
+      margin: 0 0 14px;
+      line-height: 1.15;
+    }
+
+    .main p {
+      font-size: 1.06rem;
+      line-height: 1.35;
+      margin: 0 0 12px;
+      max-width: 75ch;
+    }
+
+    .hero-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 20px 0 28px;
+      align-items: start;
+    }
+
+    .hero-images img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #f0f0f0;
+      background: #fff;
+    }
+
+    .section {
+      padding: 26px 0 10px;
+    }
+
+    .section h3 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: clamp(1.5rem, 2vw, 2rem);
+      margin: 0 0 14px;
+      line-height: 1.15;
+    }
+
+    .section ul {
+      margin: 0;
+      padding-left: 24px;
+      max-width: 80ch;
+    }
+
+    .section li {
+      margin: 0 0 14px;
+      font-size: 1.03rem;
+      line-height: 1.35;
+    }
+
+    .sidebar {
+      background: var(--sidebar);
+      padding: 18px 16px 28px;
+    }
+
+    .sidebar h3 {
+      margin: 0 0 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.65rem;
+      line-height: 1.15;
+    }
+
+    .profile {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 12px;
+      background: #d8d8d8;
+    }
+
+    .sidebar p {
+      font-size: 1rem;
+      line-height: 1.25;
+      margin: 0 0 10px;
+      color: #111;
+    }
+
+    .sidebar .links a {
+      display: block;
+      margin: 3px 0;
+    }
+
+    .sidebar .panel {
+      margin-bottom: 22px;
+    }
+
+    .footer {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 0 28px 24px 308px;
+      color: #666;
+      font-size: 0.92rem;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .link-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .link-list li {
+      margin: 0 0 8px;
+    }
+
+    @media (max-width: 1150px) {
+      .layout {
+        grid-template-columns: 240px 1fr;
+      }
+      .sidebar {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 20px;
+      }
+      .footer {
+        padding-left: 28px;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .topbar-inner,
+      .layout,
+      .sidebar,
+      .hero-images {
+        grid-template-columns: 1fr;
+        display: grid;
+      }
+      .brand-mark {
+        justify-content: flex-start;
+        text-align: left;
+        white-space: normal;
+      }
+      .left-nav {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .main {
+        padding: 16px 16px 24px;
+      }
+      .sidebar {
+        padding: 18px 16px 24px;
+      }
+      .footer {
+        padding: 0 16px 24px;
+      }
+      .profile {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div>
+        <h1 class="site-title">Your Name</h1>
+        <p class="site-subtitle">A portfolio website for engineering, product, and web projects</p>
+      </div>
+      <div class="brand-mark">
+        <img src="https://via.placeholder.com/120x120.png?text=Logo" alt="Logo" />
+        <div class="uni">Your University<br />or Brand Name</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="left-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="main">
+      <section id="home">
+        <h2>Welcome</h2>
+        <p>
+          I build clean, fast, and reliable websites, tools, and interfaces. This site is organized like a classic
+          academic lab homepage, with separate pages for projects, writing, and resources.
+        </p>
+        <div class="hero-images">
+          <img src="https://via.placeholder.com/700x520.png?text=Project+Image+1" alt="Project image one" />
+          <img src="https://via.placeholder.com/700x520.png?text=Project+Image+2" alt="Project image two" />
+        </div>
+      </section>
+
+      <section class="section" id="projects-summary">
+        <h3>Public Repositories</h3>
+        <ul>
+          <li>
+            <strong>Repository One:</strong> A front-end project, hosted on GitHub and linked from the
+            <a href="projects.html">Projects</a> page.
+          </li>
+          <li>
+            <strong>Repository Two:</strong> A utility or tool project with notes, demos, and code examples.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="work">
+        <h3>Featured Work</h3>
+        <p>
+          Use this area to introduce selected projects, case studies, or writing. Each card can also link to a dedicated page.
+        </p>
+        <ul class="link-list">
+          <li><a href="project-one.html">Project One — case study</a></li>
+          <li><a href="project-two.html">Project Two — technical writeup</a></li>
+          <li><a href="notes.html">Notes — blog or research posts</a></li>
+        </ul>
+      </section>
+
+      <section class="section" id="resources">
+        <h3>Resources</h3>
+        <p class="note">
+          Link to your resume, CV, GitHub, papers, downloadable PDFs, or any other supporting pages.
+        </p>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <div class="panel">
+        <h3>About Me</h3>
+        <img class="profile" src="https://via.placeholder.com/300x300.png?text=Photo" alt="Portrait of Your Name" />
+        <p><strong>Your Name</strong></p>
+        <p>Developer, designer, or researcher</p>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>Office or location line</p>
+      </div>
+
+      <div class="panel">
+        <h3>Links</h3>
+        <div class="links">
+          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a href="https://scholar.google.com" target="_blank" rel="noreferrer">Google Scholar</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Project Area</h3>
+        <p>
+          Use this box for a short biography, a lab-style description, or a summary of current work.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="footer">
+    © 2026 Your Name. Built for GitHub Pages.
+  </div>
+</body>
+</html>
