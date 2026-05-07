@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Publications from Your Research Laboratory.">
+  <title>Publications | Your Research Laboratory</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="lab-heading">
+        <a class="lab-heading__title" href="index.html">Your Research Laboratory</a>
+        <p class="lab-heading__subtitle">An interdisciplinary research lab at Your University</p>
+      </div>
+      <a class="university-lockup" href="https://www.example.edu/" aria-label="University home page">
+        <img src="assets/images/university-mark.svg" alt="" class="university-lockup__mark">
+        <span class="university-lockup__name">YOUR<br>UNIVERSITY</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <nav class="side-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="resources.html">Resources</a>
+      <a href="personnel.html">Personnel</a>
+    </nav>
+
+    <main class="content" id="main-content">
+      <h1>Publications</h1>
+      <p>
+        Replace these sample entries with your lab publications. The search and filter controls work without any external libraries.
+      </p>
+
+      <section class="publication-tools" aria-label="Publication search and filters">
+        <label for="publicationSearch">Search publications</label>
+        <input id="publicationSearch" type="search" placeholder="Search by author, title, year, or keyword">
+        <div class="filter-buttons" aria-label="Publication type filters">
+          <button type="button" data-filter="all" class="is-active">All</button>
+          <button type="button" data-filter="journal">Journal</button>
+          <button type="button" data-filter="conference">Conference</button>
+          <button type="button" data-filter="preprint">Preprint</button>
+          <button type="button" data-filter="thesis">Thesis</button>
+        </div>
+      </section>
+
+      <section class="publication-year" id="featured-paper">
+        <h2>2026</h2>
+        <article class="publication" data-type="journal" data-search="2026 your name adaptive autonomy digital twin journal">
+          <p class="publication__title">Adaptive Digital Twins for Real-Time Prognostics in Complex Engineered Systems</p>
+          <p class="publication__authors">Your Name, Student A, Collaborator B</p>
+          <p class="publication__venue"><em>Journal of Example Research</em>, 2026.</p>
+          <p class="publication__links">
+            <a href="assets/files/publication-placeholder.html">PDF</a>
+            <a href="https://doi.org/" target="_blank" rel="noopener">DOI</a>
+            <button type="button" class="copy-citation" data-citation="Your Name, Student A, and Collaborator B. Adaptive Digital Twins for Real-Time Prognostics in Complex Engineered Systems. Journal of Example Research, 2026.">Copy citation</button>
+          </p>
+        </article>
+        <article class="publication" data-type="conference" data-search="2026 structural health monitoring sensing conference">
+          <p class="publication__title">High-Rate Sensing and Decision Support for Structural Health Monitoring</p>
+          <p class="publication__authors">Student C, Your Name</p>
+          <p class="publication__venue"><em>Proceedings of the Example Engineering Conference</em>, 2026.</p>
+          <p class="publication__links">
+            <a href="assets/files/publication-placeholder.html">PDF</a>
+            <a href="resources.html#presentations">Slides</a>
+            <button type="button" class="copy-citation" data-citation="Student C and Your Name. High-Rate Sensing and Decision Support for Structural Health Monitoring. Proceedings of the Example Engineering Conference, 2026.">Copy citation</button>
+          </p>
+        </article>
+      </section>
+
+      <section class="publication-year">
+        <h2>2025</h2>
+        <article class="publication" data-type="preprint" data-search="2025 preprint uncertainty quantification mission planning">
+          <p class="publication__title">Uncertainty-Aware Mission Planning with Online Model Updating</p>
+          <p class="publication__authors">Student D, Collaborator E, Your Name</p>
+          <p class="publication__venue"><em>Preprint</em>, 2025.</p>
+          <p class="publication__links">
+            <a href="assets/files/publication-placeholder.html">PDF</a>
+            <a href="https://arxiv.org/" target="_blank" rel="noopener">Preprint server</a>
+            <button type="button" class="copy-citation" data-citation="Student D, Collaborator E, and Your Name. Uncertainty-Aware Mission Planning with Online Model Updating. Preprint, 2025.">Copy citation</button>
+          </p>
+        </article>
+        <article class="publication" data-type="journal" data-search="2025 resilient infrastructure risk maintenance journal">
+          <p class="publication__title">Risk-Informed Inspection Scheduling for Resilient Infrastructure Systems</p>
+          <p class="publication__authors">Your Name, Student F</p>
+          <p class="publication__venue"><em>Example Infrastructure Journal</em>, 2025.</p>
+          <p class="publication__links">
+            <a href="assets/files/publication-placeholder.html">PDF</a>
+            <a href="https://doi.org/" target="_blank" rel="noopener">DOI</a>
+            <button type="button" class="copy-citation" data-citation="Your Name and Student F. Risk-Informed Inspection Scheduling for Resilient Infrastructure Systems. Example Infrastructure Journal, 2025.">Copy citation</button>
+          </p>
+        </article>
+      </section>
+
+      <section class="publication-year">
+        <h2>Student Theses</h2>
+        <article class="publication" data-type="thesis" data-search="2024 thesis machine learning prognostics">
+          <p class="publication__title">Machine Learning for Prognostics in Time-Varying Mechanical Systems</p>
+          <p class="publication__authors">Graduate Student</p>
+          <p class="publication__venue">M.S. Thesis, Your University, 2024.</p>
+          <p class="publication__links">
+            <a href="assets/files/publication-placeholder.html">PDF</a>
+            <a href="personnel.html#alumni">Alumni profile</a>
+          </p>
+        </article>
+      </section>
+
+      <p id="noPublicationsMessage" class="empty-state" hidden>No publications match your search.</p>
+    </main>
+
+    <aside class="sidebar" aria-label="Publication sidebar">
+      <section class="profile-card">
+        <h2>Publication Links</h2>
+        <ul class="compact-links">
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar profile</a></li>
+          <li><a href="https://orcid.org/" target="_blank" rel="noopener">ORCID profile</a></li>
+          <li><a href="resources.html#data">Datasets</a></li>
+          <li><a href="resources.html#software">Software</a></li>
+        </ul>
+      </section>
+      <section class="profile-card profile-card--secondary">
+        <h2>How to Update</h2>
+        <p>Copy an existing publication block, edit the title and links, and update the <code>data-type</code> and <code>data-search</code> attributes for filtering.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-current-year>2026</span> Your Research Laboratory. Built for GitHub Pages.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="570" viewBox="0 0 980 570" role="img" aria-labelledby="title desc">
+  <title id="title">Research workflow diagram</title>
+  <desc id="desc">A flow diagram connecting sensing, data fusion, models, predictions, and decisions for an academic lab website.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#222222"/>
+    </marker>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7df"/>
+      <stop offset="1" stop-color="#fffdf5"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="980" height="570" fill="#ffffff"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#1a1a1a" stroke="#222222" stroke-width="2">
+    <rect x="60" y="45" width="860" height="330" rx="18" fill="url(#panel)"/>
+    <text x="185" y="75" text-anchor="middle" font-size="18">component A</text>
+    <text x="485" y="75" text-anchor="middle" font-size="18">component B</text>
+    <text x="765" y="75" text-anchor="middle" font-size="18">component C</text>
+
+    <rect x="90" y="110" width="185" height="55" fill="#ffffff"/>
+    <text x="182" y="144" text-anchor="middle">sensor signals</text>
+
+    <path d="M182 166v55" marker-end="url(#arrow)" fill="none"/>
+    <polygon points="182,220 260,265 182,310 104,265" fill="#ffffff"/>
+    <text x="182" y="256" text-anchor="middle" font-size="15">localized damage</text>
+    <text x="182" y="276" text-anchor="middle" font-size="15">detection?</text>
+
+    <rect x="116" y="320" width="132" height="48" fill="#ffffff"/>
+    <text x="182" y="350" text-anchor="middle" font-size="15">take no action</text>
+
+    <rect x="330" y="96" width="180" height="110" fill="#ffffff"/>
+    <text x="420" y="119" text-anchor="middle" font-size="16">data fusion</text>
+    <g transform="translate(350 130)">
+      <rect x="0" y="0" width="18" height="18" fill="#b10012" stroke="none"/>
+      <rect x="24" y="0" width="18" height="18" fill="#111111" stroke="none"/>
+      <rect x="48" y="0" width="18" height="18" fill="#f5d22e" stroke="none"/>
+      <rect x="0" y="24" width="18" height="18" fill="#f5d22e" stroke="none"/>
+      <rect x="24" y="24" width="18" height="18" fill="#b10012" stroke="none"/>
+      <rect x="48" y="24" width="18" height="18" fill="#111111" stroke="none"/>
+      <rect x="0" y="48" width="18" height="18" fill="#111111" stroke="none"/>
+      <rect x="24" y="48" width="18" height="18" fill="#f5d22e" stroke="none"/>
+      <rect x="48" y="48" width="18" height="18" fill="#b10012" stroke="none"/>
+    </g>
+    <path d="M440 145h55" marker-end="url(#arrow)" fill="none"/>
+    <text x="458" y="177" font-size="13">physics-driven</text>
+    <text x="458" y="194" font-size="13">features</text>
+
+    <rect x="315" y="230" width="230" height="125" fill="#ffffff"/>
+    <text x="430" y="252" text-anchor="middle" font-size="16">surrogate component</text>
+    <path d="M340 323 C365 250, 405 250, 430 305 S500 345, 525 260" fill="none" stroke="#2d6ea3" stroke-width="4"/>
+    <circle cx="366" cy="292" r="4" fill="#7b000c" stroke="none"/>
+    <circle cx="390" cy="270" r="4" fill="#7b000c" stroke="none"/>
+    <circle cx="455" cy="315" r="4" fill="#7b000c" stroke="none"/>
+    <circle cx="500" cy="292" r="4" fill="#7b000c" stroke="none"/>
+    <text x="354" y="344" font-size="13">distance</text>
+    <text x="506" y="284" font-size="13">model</text>
+    <text x="367" y="285" font-size="13">observed data</text>
+
+    <rect x="650" y="95" width="220" height="95" rx="10" fill="#ffffff"/>
+    <text x="760" y="120" text-anchor="middle" font-size="16">predefined mission data</text>
+    <g transform="translate(695 137)" stroke="#c08a77" fill="none">
+      <path d="M0 30c20-28 40-28 60 0s40 28 60 0"/>
+      <path d="M4 25c20-28 40-28 60 0s40 28 60 0" opacity="0.55"/>
+      <path d="M8 20c20-28 40-28 60 0s40 28 60 0" opacity="0.35"/>
+      <path d="M12 15c20-28 40-28 60 0s40 28 60 0" opacity="0.25"/>
+    </g>
+
+    <rect x="620" y="235" width="260" height="115" fill="#ffffff"/>
+    <text x="750" y="258" text-anchor="middle" font-size="16">component-level prognostics</text>
+    <path d="M650 316 C690 280, 724 285, 760 305 S830 330, 855 278" fill="none" stroke="#2c74c9" stroke-width="4" stroke-dasharray="9 7"/>
+    <line x1="650" y1="325" x2="858" y2="325"/>
+    <line x1="650" y1="325" x2="650" y2="278"/>
+    <text x="755" y="344" text-anchor="middle" font-size="13">time</text>
+    <text x="673" y="291" font-size="13">online estimates</text>
+    <text x="800" y="290" font-size="13">model projection</text>
+
+    <path d="M275 138h55" marker-end="url(#arrow)" fill="none"/>
+    <path d="M420 206v24" marker-end="url(#arrow)" fill="none"/>
+    <path d="M545 292h75" marker-end="url(#arrow)" fill="none"/>
+    <path d="M760 190v45" marker-end="url(#arrow)" fill="none"/>
+    <path d="M260 265h55" marker-end="url(#arrow)" fill="none"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#1a1a1a" stroke="#222222" stroke-width="2">
+    <rect x="60" y="410" width="295" height="105" fill="#f4f4f4"/>
+    <text x="207" y="435" text-anchor="middle" font-size="16">system experiencing</text>
+    <text x="207" y="455" text-anchor="middle" font-size="16">high-rate dynamics</text>
+    <rect x="85" y="465" width="245" height="40" fill="#b7d4ed"/>
+    <path d="M100 500 C145 462, 196 490, 235 468 S295 458, 325 492" fill="none" stroke="#7b000c" stroke-width="5"/>
+
+    <polygon points="520,420 610,470 520,520 430,470" fill="#ffffff"/>
+    <text x="520" y="462" text-anchor="middle" font-size="15">decision making</text>
+    <text x="520" y="482" text-anchor="middle" font-size="15">condition met?</text>
+    <rect x="452" y="525" width="136" height="36" fill="#ffffff"/>
+    <text x="520" y="549" text-anchor="middle" font-size="15">take no action</text>
+
+    <rect x="680" y="405" width="240" height="125" fill="#f4f4f4"/>
+    <text x="800" y="430" text-anchor="middle" font-size="16">system-level prognostics</text>
+    <path d="M710 498 C744 450, 780 454, 816 488 S874 520, 898 455" fill="none" stroke="#2c74c9" stroke-width="4" stroke-dasharray="8 6"/>
+    <circle cx="780" cy="486" r="15" fill="none" stroke="#7b000c" stroke-width="3"/>
+    <line x1="680" y1="470" x2="610" y2="470" marker-end="url(#arrow)"/>
+    <text x="375" y="464" font-size="14">yes</text>
+    <path d="M430 470h-75" marker-end="url(#arrow)" fill="none"/>
+    <text x="616" y="464" font-size="14">yes</text>
+    <path d="M610 470h70" marker-end="url(#arrow)" fill="none"/>
+  </g>
+</svg>
