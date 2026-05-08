@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" role="img" aria-labelledby="title desc">
+  <title id="title">Emmanuel A. Ogunniyi profile placeholder</title>
+  <desc id="desc">Initials portrait placeholder.</desc>
+  <rect width="180" height="220" fill="#e8edf2"/>
+  <circle cx="90" cy="78" r="42" fill="#7b000c" opacity="0.95"/>
+  <path d="M26 214c8-48 38-72 64-72s56 24 64 72" fill="#7b000c" opacity="0.95"/>
+  <text x="90" y="88" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#ffffff">EAO</text>
+  <rect x="8" y="8" width="164" height="204" fill="none" stroke="#c7a54a" stroke-width="4"/>
+</svg>

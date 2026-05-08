@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 440" role="img" aria-labelledby="title desc">
+  <title id="title">Research workflow</title>
+  <desc id="desc">Sensing, data fusion, modeling, digital twin updating, and decision support workflow.</desc>
+  <rect width="980" height="440" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333333"/>
+    </marker>
+  </defs>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111111">
+    <rect x="40" y="70" width="180" height="90" rx="10" fill="#fff4f5" stroke="#7b000c" stroke-width="3"/>
+    <text x="130" y="105" text-anchor="middle" font-weight="700">Physical System</text>
+    <text x="130" y="132" text-anchor="middle" font-size="15">AM, structures, batteries</text>
+
+    <rect x="285" y="70" width="180" height="90" rx="10" fill="#f7f7f7" stroke="#555555" stroke-width="3"/>
+    <text x="375" y="105" text-anchor="middle" font-weight="700">Sensing</text>
+    <text x="375" y="132" text-anchor="middle" font-size="15">optical, thermal, strain</text>
+
+    <rect x="530" y="70" width="180" height="90" rx="10" fill="#fff4f5" stroke="#7b000c" stroke-width="3"/>
+    <text x="620" y="105" text-anchor="middle" font-weight="700">Data Fusion</text>
+    <text x="620" y="132" text-anchor="middle" font-size="15">features and validation</text>
+
+    <rect x="775" y="70" width="165" height="90" rx="10" fill="#f7f7f7" stroke="#555555" stroke-width="3"/>
+    <text x="857" y="105" text-anchor="middle" font-weight="700">Digital Twin</text>
+    <text x="857" y="132" text-anchor="middle" font-size="15">model updating</text>
+
+    <rect x="195" y="265" width="210" height="95" rx="10" fill="#f7f7f7" stroke="#555555" stroke-width="3"/>
+    <text x="300" y="302" text-anchor="middle" font-weight="700">High-Rate ML</text>
+    <text x="300" y="330" text-anchor="middle" font-size="15">anomaly detection</text>
+
+    <rect x="575" y="265" width="210" height="95" rx="10" fill="#fff4f5" stroke="#7b000c" stroke-width="3"/>
+    <text x="680" y="302" text-anchor="middle" font-weight="700">Decision Support</text>
+    <text x="680" y="330" text-anchor="middle" font-size="15">quality, safety, control</text>
+  </g>
+  <g stroke="#333333" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M220 115H285"/>
+    <path d="M465 115H530"/>
+    <path d="M710 115H775"/>
+    <path d="M857 160C855 230 765 250 710 265"/>
+    <path d="M575 312H405"/>
+    <path d="M300 265C270 222 160 218 130 160"/>
+    <path d="M680 265C600 220 520 215 420 160"/>
+  </g>
+  <path d="M60 395C190 410 275 385 360 398C450 412 520 423 620 402C738 378 822 384 930 398" stroke="#c7a54a" stroke-width="5" fill="none"/>
+  <text x="490" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#555555">smart manufacturing | smart sensing | digital twins | high-rate decisions</text>
+</svg>
